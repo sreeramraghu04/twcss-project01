@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            xs: "370px",
+            // => @media (min-width: 370px) { ... }
+
+            sm: "640px",
+            // => @media (min-width: 640px) { ... }
+
+            md: "768px",
+            // => @media (min-width: 768px) { ... }
+
+            lg: "1024px",
+            // => @media (min-width: 1024px) { ... }
+
+            xl: "1280px",
+            // => @media (min-width: 1280px) { ... }
+
+            "2xl": "1536px",
+            // => @media (min-width: 1536px) { ... }
+          },
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+            fontFamily: {},
+          },
+        },
+      };
+    </script>
+    <title>monstera</title>
+  </head>
+  <body>
+    <div class="">
+      <nav class="h-20">
+        <div class="absolute right-0 bottom-0 z-[-1]">
+          <img
+            class="lg:w-[500px] md:w-[400px] sm:w-[350px] xs:w-[300px]"
+            src="/monstera/images/03_flowerCut.png"
+            alt=""
+          />
+        </div>
+        <!--left-->
+        <div class="flex items-center">
+          <img src="/monstera/images/Logo.svg" alt="" class="pl-12 mt-5" />
+        </div>
+        <!--center-->
+        <div
+          class="flex justify-center gap-20 pl-20 mt-[-25px] text-xl lg:flex hidden"
+        >
+          <div class="font-bold hover:underline hover:cursor-pointer">Home</div>
+          <div class="font-bold hover:underline hover:cursor-pointer">
+            Collection
+          </div>
+          <div class="font-bold hover:underline hover:cursor-pointer">Shop</div>
+          <div class="font-bold hover:underline hover:cursor-pointer">
+            About
+          </div>
+          <div class="font-bold hover:underline hover:cursor-pointer">
+            Contact
+          </div>
+        </div>
+        <!--right-->
+        <div class="flex justify-end gap-12 pr-12 mt-[-30px] text-2xl">
+          <div class="hover:cursor-pointer lg:flex md:flex sm:flex xs:hidden">
+            <i class="fa-solid fa-bag-shopping" style="color: #000000"></i>
+          </div>
+          <div class="hover:cursor-pointer xs:hidden lg:flex md:flex sm:flex">
+            <i class="fa-regular fa-user" style="color: #000000"></i>
+          </div>
+          <div class="hover:cursor-pointer">
+            <i class="fa-solid fa-magnifying-glass" style="color: #000000"></i>
+          </div>
+          <div class="hover:cursor-pointer lg:hidden">
+            <i class="fa-solid fa-bars" style="color: #000000"></i>
+          </div>
+        </div>
+      </nav>
+      <main>
+        <!--main screen-->
+        <div>
+          <div class="pl-10">
+            <h1 class="lg:text-8xl font-bold mt-36 md:text-7xl sm:text-5xl xs:text-3xl">
+              MONSTERA
+            </h1>
+            <ul
+              class="lg:text-xl mt-10 list-disc lg:w-[700px] md:w-[300px] sm:w-[200px] xs:w-[180px] md:text-xl sm:text-sm xs:text-xs"
+            >
+              <li>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rerum,
+                soluta!
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+                modi alias. Vitae beatae eius alias.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum
+                magni amet iusto omnis culpa enim ex accusantium tempore
+                voluptatum voluptas!
+              </li>
+            </ul>
+          </div>
+          <div
+            class="flex items-center ml-10 lg:text-5xl md:text-3xl sm:text-2xl xs:text-xl mt-10 hover:cursor-pointer"
+          >
+            <div class="bg-green-800 text-white px-6 py-2 rounded-full">
+              DISCOVER
+              <i class="fa-solid fa-angle-right" style="color: #ffffff"></i>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!--footer-->
+      <div class="flex items-center gap-20 pl-10 mt-20 lg:flex md:hidden sm:hidden xs:hidden">
+        <div class="flex">
+          <i
+            class="fa-solid fa-hand-holding-droplet text-5xl hover:cursor-pointer"
+            style="color: #000000"
+          ></i>
+          <div class="items-center pl-2">
+            <h4 class="font-bold">Feeding</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="flex">
+          <i
+            class="fa-regular fa-lightbulb text-5xl hover:cursor-pointer"
+            style="color: #000000"
+          ></i>
+          <div class="items-center pl-2">
+            <h4 class="font-bold">Light</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+        <div class="flex">
+          <i
+            class="fa-solid fa-hands-holding-child text-5xl hover:cursor-pointer"
+            style="color: #000000"
+          ></i>
+          <div class="items-center pl-2">
+            <h4 class="font-bold">Care</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
